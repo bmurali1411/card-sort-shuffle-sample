@@ -1,0 +1,117 @@
+
+.header{
+   text-align: center;
+}
+.parent {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+  
+}
+
+.child1{
+  background-color: #f1f1f1;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex-basis: 80%;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.child2{
+  background-color: #f1f1f1;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  padding: 10px;
+}
+
+.child1 > div{
+   color: white;
+  width: 33.33%;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  
+}
+
+.child2 > button{
+  width: 100%;
+  margin-top: 5px;
+  border: 2px solid #72c3dc;
+  border-radius: 5px;
+  background-color: #72c3dc;
+  -webkit-box-shadow:0px 1px 1px #2b8ead;
+ -moz-box-shadow:0px 1px 1px #2b8ead;
+ box-shadow:0px 2px 1px #2b8ead;
+ color: #FFF;
+}
+
+.textClass{
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 375px) {
+  .parent {
+    display: flex;
+    background-color: #f1f1f1; 
+    flex-direction: column-reverse;
+}
+
+.child1 > div{
+   color: white;
+  width: 100%;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  background-color: #bfbfbf !important;
+  border-top: 2px solid white;
+  border-left-style: solid;
+  border-left-width: 5px;
+}
+
+.child1{
+  background-color: white;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display:flex;
+  flex-direction: column;
+}
+.child2{
+  background-color: white;
+  color: white;
+  line-height: 75px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+}
+.child2 > button{
+  
+  margin: 5px;
+  border: 2px solid #72c3dc;
+  border-radius: 5px;
+  background-color: #72c3dc;
+  -webkit-box-shadow:0px 1px 1px #2b8ead;
+ -moz-box-shadow:0px 1px 1px #2b8ead;
+ box-shadow:0px 2px 1px #2b8ead;
+ color: #FFF;
+}
+
+.textClass{
+  text-align: center;
+  background-color: white;
+}
+
+}
